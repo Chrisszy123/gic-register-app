@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-const MONGODB_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/paltext';
+const MONGODB_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/gicregister';
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
